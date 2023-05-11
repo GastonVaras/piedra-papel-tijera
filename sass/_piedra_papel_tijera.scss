@@ -1,0 +1,113 @@
+html{
+    background-color: aquamarine;
+}
+body {
+    background-color: grey;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 0px auto;
+}
+
+.tablero_piedra_papel_tijera {
+    display: grid;
+    grid-template-rows: 2fr 3fr 2fr;
+    height: 100%;
+
+    // Tercio de la pantalla que corresponde a la maquina
+    .PPT_maquina {
+        background-color: green;
+        // Default = secreto. Cambia al elegir
+        #jugada_maquina {
+            margin: 10px auto;
+            // ocupa solo el 30% del 100% total de ancho
+            width: 30%;
+            border-radius: 15%;
+            box-shadow: 5px 5px 5px;
+        }
+    }
+
+    // Tercio de la pantalla que corresponde a resultados
+    .PPT_resultados {
+        background-color: rgb(50, 50, 78);
+        height: 100%;
+        // Se reemplaza por la eleccion del jugador
+        #jugada_jugador {
+            border: 1px solid white;
+            border-radius: 15%;
+            margin: 0px auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    // Tercio de pantalla que corresponde a Player1
+    .PPT_jugador {
+        background-color: green;
+        width: 100vw;
+        max-width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        .opcion {
+            border: none;
+            width: 30%;
+            height: 128px;
+            margin: 0px auto;
+            border-radius: 25%;
+            box-shadow: 5px 5px 5px 5px;
+            background-color: orange;
+            background-image: none;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+
+        #rock {
+            background-image: url(../images/Piedra.png);
+
+        }
+
+        #paper {
+            background-image: url(../images/Papel.png);
+        }
+
+        #scissors {
+            background-image: url(../images/Tijera.png);
+        }
+    }
+}
+
+h2{
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    
+}
+
+@keyframes WinCondition {
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes LoseCondition {
+    25% {
+
+        transform: rotate(-45deg);
+    }
+75% {
+
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+

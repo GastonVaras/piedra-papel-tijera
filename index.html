@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Breve descripcion de la pagina">
+    <meta name="keywords" content="keyword1, keyword2, etc">
+    <link rel="stylesheet" href="./style/sass.css">
+    <title>Piedra Papel o Tijera</title>
+</head>
+
+<body>
+
+
+    <div class="tablero_piedra_papel_tijera">
+        <div class="PPT_maquina ">
+            <!-- h2 sin estilo porque no se ve -->
+            <h2 style="display: none;">Computer Choice: <span id="computer-choice"></span></h2>
+            <img id="jugada_maquina" src="./images/Secreto.png" alt="">
+        </div>
+
+        <div class="PPT_resultados">
+            <h2><span id="result"> </span></h2>
+            <h2 style="display: none;">Your Choice: <span id=user-choice> </span></h2>
+            <img id="jugada_jugador" src="./images/Secreto.png" alt="">
+        </div>
+
+        <div class="PPT_jugador">
+            <button id="rock" class="opcion"></button>
+            <button id="paper" class="opcion"></button>
+            <button id="scissors" class="opcion"></button>
+        </div>
+    </div>
+
+    <script src="./javascript/piedra_papel_tijera.js"></script>
+</body>
+
+</html>
