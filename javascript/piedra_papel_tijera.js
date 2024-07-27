@@ -70,24 +70,24 @@ function getResult () {
 
 function cambiarImagen () {
     if(computerChoice === "rock"){
-        document.getElementById('jugada_maquina').src = '/images/Piedra.png'
+        document.getElementById('jugada_maquina').src = 'https://gastonvaras.github.io/piedra-papel-tijera/images/Piedra.png'
     }
     else if(computerChoice === "paper"){
-        document.getElementById('jugada_maquina').url = '/images/Papel.png'
+        document.getElementById('jugada_maquina').src = 'https://gastonvaras.github.io/piedra-papel-tijera/images/Papel.png'
     }
     else if(computerChoice === "scissors"){
-        document.getElementById('jugada_maquina').url = '../images/Tijera.png'
+        document.getElementById('jugada_maquina').src = 'https://gastonvaras.github.io/piedra-papel-tijera/images/Tijera.png'
     }
 }
 
 function userChoiceImg () {
     if (userChoice === "rock") {
-        document.getElementById('jugada_jugador').src = '/images/Piedra.png'
+        document.getElementById('jugada_jugador').src = 'https://gastonvaras.github.io/piedra-papel-tijera/images/Piedra.png'
     }
     else if (userChoice === "paper") {
-        document.getElementById('jugada_jugador').src = 'images/Papel.png'
+        document.getElementById('jugada_jugador').src = 'https://gastonvaras.github.io/piedra-papel-tijera/images/Papel.png'
     }
     else if (userChoice === "scissors") {
-        document.getElementById('jugada_jugador').src = '/images/Tijera.png'
+        document.getElementById('jugada_jugador').src = 'https://gastonvaras.github.io/piedra-papel-tijera/images/Tijera.png'
     }
 }
