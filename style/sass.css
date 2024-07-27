@@ -138,21 +138,32 @@ h2 {
 }
 
 @keyframes WinCondition {
+  0% {
+    box-shadow: 0px 0px 20px green;
+  }
   50% {
     transform: scale(1.2);
+    box-shadow: 0px 0px 20px green;
   }
   100% {
     transform: scale(1);
+    box-shadow: 0px 0px 20px green;
   }
 }
 @keyframes LoseCondition {
   25% {
     transform: rotate(-45deg);
+    box-shadow: 0px 0px 20px red;
+  }
+  50% {
+    box-shadow: 0px 0px 0px red;
   }
   75% {
     transform: rotate(45deg);
+    box-shadow: 0px 0px 20px red;
   }
   100% {
     transform: rotate(0deg);
+    box-shadow: 0px 0px 0px red;
   }
 }/*# sourceMappingURL=sass.css.map */

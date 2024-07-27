@@ -1,6 +1,7 @@
-html{
+html {
     background-color: aquamarine;
 }
+
 body {
     background-color: grey;
     max-width: 500px;
@@ -16,6 +17,7 @@ body {
     // Tercio de la pantalla que corresponde a la maquina
     .PPT_maquina {
         background-color: green;
+
         // Default = secreto. Cambia al elegir
         #jugada_maquina {
             margin: 10px auto;
@@ -30,6 +32,7 @@ body {
     .PPT_resultados {
         background-color: rgb(50, 50, 78);
         height: 100%;
+
         // Se reemplaza por la eleccion del jugador
         #jugada_jugador {
             border: 1px solid white;
@@ -49,7 +52,7 @@ body {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        
+
         .opcion {
             border: none;
             width: 30%;
@@ -62,7 +65,7 @@ body {
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            
+
         }
 
         #rock {
@@ -80,34 +83,45 @@ body {
     }
 }
 
-h2{
+h2 {
     color: white;
     text-align: center;
     margin: 20px auto;
-    
+
 }
 
 @keyframes WinCondition {
+    0% {
+        box-shadow: 0px 0px 20px green;
+    }
     50% {
         transform: scale(1.2);
+        box-shadow: 0px 0px 20px green;
     }
 
     100% {
         transform: scale(1);
+        box-shadow: 0px 0px 20px green;
     }
 }
 
 @keyframes LoseCondition {
     25% {
-
         transform: rotate(-45deg);
+        box-shadow: 0px 0px 20px red;
     }
-75% {
 
-        transform: rotate(45deg);
+    50% {
+        box-shadow: 0px 0px 0px red;
     }
+
+    75% {
+        transform: rotate(45deg);
+        box-shadow: 0px 0px 20px red;
+    }
+
     100% {
         transform: rotate(0deg);
+        box-shadow: 0px 0px 0px red;
     }
 }
-
